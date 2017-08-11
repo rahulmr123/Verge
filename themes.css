@@ -1,0 +1,35 @@
+.header{
+	background-color: black;
+	height: 400px;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.header__logo{
+	width: 70%;
+   float:left;
+   
+}
+.header__login-logo{
+	float: right;
+    width: 30%;
+    height:35px;
+    
+   
+   
+}
+.hi{
+	float:right;
+	padding:8px;	margin-top: 10px;
+}
+.verge{
+	padding:8px;
+
+}
+.header__links{
+	display: inline-block;
+	width:100%;
+
+}
