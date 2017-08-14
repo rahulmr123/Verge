@@ -1,0 +1,74 @@
+body{
+	margin:0px;
+}
+
+
+.header{
+	background-color: black;
+	
+	position: relative;
+	
+	width: 100%;
+	height: 79px;
+	border-bottom: 1px solid #333333;
+	
+}
+
+.header__logo{
+	width: 70%;
+   float:left;
+   
+}
+.header__login-logo{
+	float: right;
+    width: 30%;
+    height:44px;
+    
+   
+   
+}
+.hi{
+	float:right;
+	padding:8px;	margin-top: 10px;
+}
+.verge{
+	padding:8px;
+
+}
+.header__links{
+	height: 35px;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	position: relative;
+
+}
+nav ul{display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+nav ul li{
+		position: relative;
+	float:left;
+	height: 35px;
+border-right:1px solid #333333 ;
+    box-sizing: border-box;
+
+
+}
+li {
+	display: block;
+	color:white;
+	width: 25%;
+	text-align: center;
+	line-height: 35px;
+
+
+}
+li:nth-child(4){
+	border-right: none;
+}
+ 
