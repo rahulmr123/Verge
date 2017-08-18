@@ -395,15 +395,123 @@ li a{
 }
 @media(min-width:600px){
 
+	.header__logo {
+    width: 100%;
+    background-image: url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/8799631/Opening_Act_Masthead_2.0.jpg);
+    /* padding: 64px 16px; */
+    padding: 64px 16px;
+    box-sizing: border-box;
+}
+.header{
+	height: 100%;
+}
+.header__links{
+	width: 80%;
+}
+.header__login-logo{
+	width:20%;
+	height: 100%;
+}
+.verge{
+	width: 100%;
+}
+.seven-main-contents{
+	width: 100%;
+}
+.seven-main-contents__type1__body{
+	font-size: 35px;
 
+}
 .seven-main-contents-type2{
+	width: 49.5%;
+	float: right;
+	margin: 1px;
+}
+.articles__contents_type1{
+	font-size: 17px;
+	font-weight: 600;
+}
+.articles__contents_type1_body_bottom{
+	font-size: 14.4px;
+}
+.articles__ad-box__left{
 	width: 50%;
-	padding:0px;
+	padding: 0px;
+}
+img{
+	width:30%;
+}
+.seven-main-contents img{
+	width: 100%;
 }
 .seven-main-contents__type2__body{
-	width:100%;
+	width: 100%;
+	height: 80px;
+	font-size: 20px;
+
 }
-
-
-
+.seven-main-contents__type1__body{
+	width: 48%;
+}
+.guide__blocks_elements img{
+	width: 100%;
+}
+.guide__blocks .guide__blocks_elements{
+	width: 48.8%;
+	padding: 3px;
+}
+.seven-main-contents__type1 img{
+	width: 50%;
+}
+.guide__blocks li:nth-child(2){
+float: right;
+}
+.guide__blocks li:nth-child(4){
+	float: right;
+	}
+	li a{
+		font-size: 19px;
+	}
+	.footer-wrapper__items .footer-wrapper__items_list1 .footer-wrapper__items_list a {
+		font-size: 10px;
+	}
+	.footer-wrapper{
+		display: inline-block;
+		padding: 16px 0px;
+	}
+	.footer-logo{
+		width:30%;
+		float:left;
+	}
+	.footer-wrapper__items{
+		width: 30%;
+		float: left;
+		padding: 0px;
+		text-align: left;
+	}
+	.footer-wrapper__last-content{
+		width: 30%;
+    float: left;
+	 padding: 0px;
+		text-align: right;
+		padding: 16px;
+	}
+	.footer-logo svg{
+		width: 168px;
+	}
+	.header__logo svg{
+		height: 115px;
+	}
+	.verge{
+		padding: 0px;
+	}
+	.seven-main-contents  div:nth-child(n + 6){
+		width:33%;
+	}
+	/* .seven-main-contents  div:nth-child(7){
+		width:30%;
+	}
+	.seven-main-contents  div:nth-child(8){
+		width:30%;
+	} */
 }
