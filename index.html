@@ -2,567 +2,640 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="themes.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="themes.css">
+  <link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class="global">
-		<div class="header">
-			<div class="header__logo">
-				<svg class="verge" fill="#fff" width="147.3px" padding="8px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 291.4 1280 217.2">
-					<path d="M0 292.1v58.1h39.7v153.2h67.1V292.1M220.1 372.4h-31.4v-22.3h15.8v-58h-82.8v211.3h67v-79.9h31.4v79.9h67.2V292.1h-67.2M302 503.4h124.3v-58.2h-60.2v-24.6h38.3v-48.2h-38.3v-22.2h60.2v-58.1H302M954.8 363.6c0-45.6-33.7-71.5-81.5-71.5h-74.7v211.2h67.1v-54.1l38.4 54.1h75.7l-54.4-81c19.6-10.7 29.4-30.2 29.4-58.7M865.5 387v-39.3c9.3 0 20.7 2.8 24.1 13 .3.9.5 1.9.8 2.9 0 .1 0 .3.1.4.1 1 .3 2.2.3 3.4 0 15.7-14.3 19.6-25.3 19.6M559.2 420.8h-.6l-4.8-17.4-15-53.1h26.4l17.4-58.2h-134l76.8 211.2h68.8l8.3-22.6s36.8-99.8 56.9-154.2v176.8h124.3v-58.2h-60.2v-24.6h38.2v-48.1h-38.2v-22.2h60.2V292H598l-38.8 128.8zM1280 350.3v-58.1h-124.3v211.2H1280v-58.2h-60.3v-24.6h38.3v-48h-38.3v-22.3"></path>
-					<path d="M1142.8 459.1V373H1048v48h35.3v17.1c-2.7 2.4-8.5 3.7-14.5 3.7-24.6 0-42.8-19.4-42.8-43.1s17.7-44.7 42.3-44.7c14.9 0 50.2.1 50.2.1v-62.6h-16.1c-30 0-59.9-2.4-87.4 11.8-21.7 11.2-38.9 30.2-48 52.8-5.3 13.3-8 27.7-8 42 0 59.9 47 110.4 107.9 110.4 30.2 0 59.7-11.3 75.8-25.4.1-14.6.1-16.8.1-24"></path>
-				</svg>
-			</div>
-			<div class="header__login-logo">
-				<svg class="hi" fill="#fff" width="16px" padding="8px" height="16px" viewBox="373.3 133.3 533.3 533.3" id="icon-user" width="100%"
-				 height="100%">
-					<path d="M640 400c73.6 0 133.3-59.7 133.3-133.3S713.6 133.3 640 133.3 506.7 193 506.7 266.7 566.4 400 640 400zm0 66.7c-89 0-266.7 44.7-266.7 133.3v66.7h533.3V600c.1-88.7-177.6-133.3-266.6-133.3z"></path>
-				</svg>
-			</div>
-			<nav class="header__links">
-				<ul class="header__links__list">
-					<li> <a onclick="myFunction()" class="header__links__list_item test"> Tech<svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg> </a>
-					</li>
-					<li><a  onclick="myFunction()" class="header__links__list_item test"> Science<svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
-					<li><a onclick="myFunction()" class="header__links__list_item test"> Culture <svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
-					<li><a  onclick="myFunction()" class="header__links__list_item test"> More <svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
-				</ul>
-			</nav>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-			</div>
+  <div class="global">
+    <div class="header">
+      <div class="header__logo">
+        <svg class="verge" fill="#fff" width="147.3px" padding="8px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 291.4 1280 217.2">
+          <path d="M0 292.1v58.1h39.7v153.2h67.1V292.1M220.1 372.4h-31.4v-22.3h15.8v-58h-82.8v211.3h67v-79.9h31.4v79.9h67.2V292.1h-67.2M302 503.4h124.3v-58.2h-60.2v-24.6h38.3v-48.2h-38.3v-22.2h60.2v-58.1H302M954.8 363.6c0-45.6-33.7-71.5-81.5-71.5h-74.7v211.2h67.1v-54.1l38.4 54.1h75.7l-54.4-81c19.6-10.7 29.4-30.2 29.4-58.7M865.5 387v-39.3c9.3 0 20.7 2.8 24.1 13 .3.9.5 1.9.8 2.9 0 .1 0 .3.1.4.1 1 .3 2.2.3 3.4 0 15.7-14.3 19.6-25.3 19.6M559.2 420.8h-.6l-4.8-17.4-15-53.1h26.4l17.4-58.2h-134l76.8 211.2h68.8l8.3-22.6s36.8-99.8 56.9-154.2v176.8h124.3v-58.2h-60.2v-24.6h38.2v-48.1h-38.2v-22.2h60.2V292H598l-38.8 128.8zM1280 350.3v-58.1h-124.3v211.2H1280v-58.2h-60.3v-24.6h38.3v-48h-38.3v-22.3"></path>
+          <path d="M1142.8 459.1V373H1048v48h35.3v17.1c-2.7 2.4-8.5 3.7-14.5 3.7-24.6 0-42.8-19.4-42.8-43.1s17.7-44.7 42.3-44.7c14.9 0 50.2.1 50.2.1v-62.6h-16.1c-30 0-59.9-2.4-87.4 11.8-21.7 11.2-38.9 30.2-48 52.8-5.3 13.3-8 27.7-8 42 0 59.9 47 110.4 107.9 110.4 30.2 0 59.7-11.3 75.8-25.4.1-14.6.1-16.8.1-24"></path>
+        </svg>
+      </div>
+      <div class="header__login-logo">
+        <svg class="hi" fill="#fff" width="16px" padding="8px" height="16px" viewBox="373.3 133.3 533.3 533.3" id="icon-user" width="100%"
+          height="100%">
+          <path d="M640 400c73.6 0 133.3-59.7 133.3-133.3S713.6 133.3 640 133.3 506.7 193 506.7 266.7 566.4 400 640 400zm0 66.7c-89 0-266.7 44.7-266.7 133.3v66.7h533.3V600c.1-88.7-177.6-133.3-266.6-133.3z"></path>
+        </svg>
+        <div class="saerch">
+          <svg class="search" fill="#fff" viewBox="373.3 133.3 533.3 533.3" id="icon-search" width="100%" height="100%">
+            <path d="M754.7 468.7l-22.3-22.3c24.3-33.3 37.5-73.4 37.7-114.7 0-109.5-88.8-198.3-198.3-198.3s-198.3 88.8-198.3 198.3S462.1 530 571.7 530c41.2-.2 81.3-13.4 114.7-37.7l22.3 22.3 152.7 152 45.3-45.3-152-152.6zm-183 0c-75.8 0-137.3-61.5-137.3-137.3S495.8 194 571.7 194 709 255.5 709 331.3c.2 75.7-61 137.1-136.7 137.3-.2.1-.4.1-.6.1z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="header_date">
+        <span>AUGUST 08 2017,MALTON</span>
+      </div>
+      <nav class="header__links">
+        <ul class="header__links__list">
+          <li> <a onclick="myFunction()" class="header__links__list_item test"> Tech<svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg> </a>
+          </li>
+          <li><a onclick="myFunction()" class="header__links__list_item test"> Science<svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
+          <li><a onclick="myFunction()" class="header__links__list_item test"> Culture <svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
+          <li><a onclick="myFunction()" class="header__links__list_item test"> More <svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
+          <li class="invisible"><a onclick="myFunction()" class="header__links__list_item test invisible"> Cars<svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
+          <li class="invisible"><a onclick="myFunction()" class="header__links__list_item test invisible"> Reviews <svg style="margin-left:4px" fill="#e5127d" margin-left="4px" width="7px" height="7px"viewBox="0 0 832 512" id="icon-norgie-down" width="100%" height="100%"><path d="M15.244 98.497L379.433 495.43c20.249 22.24 53.137 22.23 73.373-.021.51-.608.71-1.47 1.25-2.077L817.152 98.259c20.233-22.224 20.223-58.326-.028-80.54-.202-.1-.531-.202-.735-.404C807.065 6.732 793.993-.005 779.353 0L52.923.208C38.073.212 24.903 7.286 15.43 18.18l-.2-.227c-20.314 22.325-20.304 58.33.023 80.543h-.008z"></path></svg></a></li>
+        </ul>
+      </nav>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
 
 
 
 
 
-		
-		<script>
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-	}
-	
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-		if (!event.target.matches('.test')) {
-	
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
-	</script>
 
-		</div>
-		<div class="seven-main-contents">
-			<div class="seven-main-contents__type1">
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
 
-				<a href="https://www.theverge.com/2017/8/14/16141844/game-of-thrones-eastwatch-targaryen-legitimate-heir-reveal-annulment"
-				 class="c-entry-box--compact__image-wrapper" data-analytics-link="article:image">
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.test')) {
 
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
 
-					<picture class="c-picture" data-cid="site/picture_element-1502710754_6631_35057" data-cdata="{&quot;picture&quot;:true,&quot;dynamic_picture&quot;:false,&quot;convert_picture&quot;:false}">
+    </div>
+    <div class="seven-main-contents">
+      <div class="seven-main-contents__type1">
 
 
 
 
-						<source media="(min-width: 1300px)" srcset="https://cdn.vox-cdn.com/thumbor/bZxbWMzDuPxm-zm2rPMA5oa5E98=/0x0:1826x1026/436x436/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 436w, https://cdn.vox-cdn.com/thumbor/DE0iR6tETk7p7tWaA6VewYpYopg=/0x0:1826x1026/636x636/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 636w, https://cdn.vox-cdn.com/thumbor/CV9oOrFwearSVJ57G-hx739_wiU=/0x0:1826x1026/836x836/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 836w"
-						 sizes="436px" type="image/webp">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/jqJC55OsoKyiQnxJttg0iubJV6M=/0x0:976x549/160x107/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 160w, https://cdn.vox-cdn.com/thumbor/PVDU0lBakMJyMjo78MHxleJpnV4=/0x0:976x549/260x173/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 260w, https://cdn.vox-cdn.com/thumbor/Y0Jzo3tlY-qTWsLSuNAGxyjGWJY=/0x0:976x549/360x240/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 360w, https://cdn.vox-cdn.com/thumbor/I4c5Rd0b-wVlUUCc4vrVxfE04rU=/0x0:976x549/460x307/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 460w, https://cdn.vox-cdn.com/thumbor/itgpYVGDtEIx4BZX4-lymcIPE-0=/0x0:976x549/560x373/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 560w, https://cdn.vox-cdn.com/thumbor/tZ_ogLN00Dzyjt_scxjFBtp24No=/0x0:976x549/660x440/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 660w, https://cdn.vox-cdn.com/thumbor/M_45XH8is5yWhK8R8DCrN2whl0U=/0x0:976x549/760x507/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 760w, https://cdn.vox-cdn.com/thumbor/AgiRe6LI1Yv8QLSNqPLg96HXTxk=/0x0:976x549/860x573/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg 860w"
+          sizes="50vw" src="https://cdn.vox-cdn.com/thumbor/rkXJ-lTN4DFM2yICdJ9AiEUWeV4=/0x0:976x549/1200x800/filters:focal(542x202:698x358)/cdn.vox-cdn.com/uploads/chorus_image/image/56236665/solar_eclipse.0.jpg">
+        </a>
 
+        <div class="seven-main-contents__type1__body">
+          Blizzard revives battles net and admits it made a mastella with rebranding.
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-						<source media="(min-width: 1300px)" srcset="https://cdn.vox-cdn.com/thumbor/zl7UiiE1j-pI0JJAQ2Nadc3leZI=/0x0:1826x1026/436x436/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 436w, https://cdn.vox-cdn.com/thumbor/XWduNKJFaeJOPRTxqzGPJZFeDV8=/0x0:1826x1026/636x636/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 636w, https://cdn.vox-cdn.com/thumbor/Ud6QY9Y1Nb0F3XyA-JojS2LZUfQ=/0x0:1826x1026/836x836/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 836w"
-						 sizes="436px">
 
+        </div>
 
 
-						<source media="(min-width: 1024px)" srcset="https://cdn.vox-cdn.com/thumbor/N6pSdsa9LWQ7JGFHjpwhqLgkjGI=/0x0:1826x1026/339x191/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 339w, https://cdn.vox-cdn.com/thumbor/JK45KcsDn4gmKuo_UCcrZIu2pHQ=/0x0:1826x1026/539x303/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 539w, https://cdn.vox-cdn.com/thumbor/1hYj6nJmV8MN42RHzK6gT6HSL5g=/0x0:1826x1026/739x416/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 739w, https://cdn.vox-cdn.com/thumbor/Nwpe2Gl-8UIRsk4j5bnsidCanos=/0x0:1826x1026/939x528/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 939w, https://cdn.vox-cdn.com/thumbor/oMz7JW5pMBxXo8rtzSq-bAXu8MM=/0x0:1826x1026/1139x641/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 1139w"
-						 sizes="33vw" type="image/webp">
 
+      </div>
 
-						<source media="(min-width: 1024px)" srcset="https://cdn.vox-cdn.com/thumbor/K6eLUM_zaC-SFGY6wQWoDxWPDsk=/0x0:1826x1026/339x191/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 339w, https://cdn.vox-cdn.com/thumbor/kgYsigJ2yxvMjyS3refBeGni5lM=/0x0:1826x1026/539x303/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 539w, https://cdn.vox-cdn.com/thumbor/8BjLz8NA7A-cdZ_RezaNr0MxKKk=/0x0:1826x1026/739x416/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 739w, https://cdn.vox-cdn.com/thumbor/1smWNgxervQhPwaYs-GHjAQNrJs=/0x0:1826x1026/939x528/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 939w, https://cdn.vox-cdn.com/thumbor/oL-BVD8t7Bkexfg1Mtf4yQNilSE=/0x0:1826x1026/1139x641/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 1139w"
-						 sizes="33vw">
 
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/YoxUzNBDSVIJeEfNcPIIvIb0dTk=/0x0:907x1360/85x57/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/kutpeU8T4GUn1SS3p0v8D-FSCEs=/0x0:907x1360/185x123/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/_Efa8SgjIHn7AxYN1deFyyhsyFo=/0x0:907x1360/285x190/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/ykOMWjaInlhytaiw2-hWIyfHlfA=/0x0:907x1360/385x257/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/HEAfa78IQn1N95-8PoHAzMgmE9c=/0x0:907x1360/485x323/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/NI8ppyrtlpRs4tYk6HlVSwZk_t4=/0x0:907x1360/585x390/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/DVDL38H7ug2AYMK4-MGfCgSFNno=/0x0:907x1360/1200x800/filters:focal(401x610:545x754)/cdn.vox-cdn.com/uploads/chorus_image/image/56286907/akrales_170515_1684_0146.0.0.jpg">
 
+        <div class="seven-main-contents__type2__body">
+          Game of thornes season 7 episode 5 episode go and watch it!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-						<source media="(min-width: 600px)" srcset="https://cdn.vox-cdn.com/thumbor/046LcHrwgqTDUFXQ6K--u1bHoyI=/0x0:1826x1026/300x169/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 300w, https://cdn.vox-cdn.com/thumbor/pYk7xJseEJKZNerr7DeZ-ZpMu_s=/0x0:1826x1026/500x281/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 500w, https://cdn.vox-cdn.com/thumbor/w-SRq1C_1C_2uXF8nNwwcHurCSU=/0x0:1826x1026/700x394/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 700w, https://cdn.vox-cdn.com/thumbor/clUn8DngT1TPN0stAmB4bZfhEzE=/0x0:1826x1026/900x506/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 900w, https://cdn.vox-cdn.com/thumbor/AbdaAfssS2uyZfeLbwOlV-uWH_Y=/0x0:1826x1026/1100x619/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 1100w"
-						 sizes="50vw" type="image/webp">
+        </div>
 
 
-						<source media="(min-width: 600px)" srcset="https://cdn.vox-cdn.com/thumbor/98vbx_eJsKy_xc_rH-fpEj-iHyQ=/0x0:1826x1026/300x169/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 300w, https://cdn.vox-cdn.com/thumbor/SETMAytowMXYowCwru_Kq5iYYGE=/0x0:1826x1026/500x281/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 500w, https://cdn.vox-cdn.com/thumbor/hu7pH3f1e2qxhiNmq7C32Gy8tss=/0x0:1826x1026/700x394/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 700w, https://cdn.vox-cdn.com/thumbor/if-YkLnyumxAMr9RWN0Qy9KZBXw=/0x0:1826x1026/900x506/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 900w, https://cdn.vox-cdn.com/thumbor/oTfzRHwHRdeFGFroYuxipx6fH8w=/0x0:1826x1026/1100x619/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 1100w"
-						 sizes="50vw">
+      </div>
 
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/hiziTfAQ4rIPSD0-F2bwy2Qezuk=/0x0:2048x3000/85x57/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/QD_iwJvI7Ga_EbPnkdW974cIj1Y=/0x0:2048x3000/185x123/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/36NDbMXQ6m7sehcmp8X8BILmu4M=/0x0:2048x3000/285x190/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/HzFyvyZcY-8ARIQxM1276uMYzxE=/0x0:2048x3000/385x257/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/jWOzjXuZOt7xX_qSAOU0SP4Rva8=/0x0:2048x3000/485x323/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/8c7jOPMU3cl8sNa9v32SxPH8h1U=/0x0:2048x3000/585x390/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/75hekCu5zmRl1B_sUv8sBfOH9gQ=/0x0:2048x3000/1200x800/filters:focal(812x436:1138x762)/cdn.vox-cdn.com/uploads/chorus_image/image/56294539/76344115.0.jpg">
+        <div class="seven-main-contents__type2__body">
+          Sonic mania review: go and find whatever u need!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-						<source srcset="https://cdn.vox-cdn.com/thumbor/trPuTyYHdtk1H5pJnoqjpCxkbk4=/0x0:1826x1026/160x107/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 160w, https://cdn.vox-cdn.com/thumbor/h06Z_qMMuiSvB_rvINbKBx0B48w=/0x0:1826x1026/260x173/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 260w, https://cdn.vox-cdn.com/thumbor/Fa4nR_5zGW71QKpUQjw13llpRqc=/0x0:1826x1026/360x240/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 360w, https://cdn.vox-cdn.com/thumbor/jo0K1tWTQ3Pyk3sxB-eeHFgKzBs=/0x0:1826x1026/460x307/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 460w, https://cdn.vox-cdn.com/thumbor/lkG5poToZKg_YfnHohpkNvMZhg4=/0x0:1826x1026/560x373/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 560w, https://cdn.vox-cdn.com/thumbor/TeuUUpPwA_SzHa7h_vWwKoMBXu4=/0x0:1826x1026/660x440/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 660w, https://cdn.vox-cdn.com/thumbor/rJ4aqm3EwNupS-0CPNnAeSAQepg=/0x0:1826x1026/760x507/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 760w, https://cdn.vox-cdn.com/thumbor/q7a0_nW_pRjKX8Ypk-cKUPkzpkA=/0x0:1826x1026/860x573/filters:focal(801x301:1093x593):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 860w"
-						 sizes="50vw" type="image/webp">
+        </div>
 
 
-						<img srcset="https://cdn.vox-cdn.com/thumbor/lRugIlr5m6uCf5qkYCfIjwbs2Jg=/0x0:1826x1026/160x107/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 160w, https://cdn.vox-cdn.com/thumbor/suURw_pnsKpQ389GHbfA3jI9iFU=/0x0:1826x1026/260x173/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 260w, https://cdn.vox-cdn.com/thumbor/iJIBmEWsZKhtZuIu4TXOPLOYsX4=/0x0:1826x1026/360x240/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 360w, https://cdn.vox-cdn.com/thumbor/WbzDkmB2Nj0I6EpWZDQ3lXYIutA=/0x0:1826x1026/460x307/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 460w, https://cdn.vox-cdn.com/thumbor/Jf8U5NB7s9dd3wN2rWy4-eYAMh8=/0x0:1826x1026/560x373/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 560w, https://cdn.vox-cdn.com/thumbor/TIBZ6ZbTqEXMQBTBd8wYee8nETw=/0x0:1826x1026/660x440/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 660w, https://cdn.vox-cdn.com/thumbor/iHv4BUMCSPfIjIQ-HwK0pTFQv0E=/0x0:1826x1026/760x507/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 760w, https://cdn.vox-cdn.com/thumbor/_lwcL1xjRYHb6Zvsll9DR4Ucbs4=/0x0:1826x1026/860x573/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg 860w"
-						 sizes="50vw" src="https://cdn.vox-cdn.com/thumbor/fS2Q6hb0hfwMHcNL2XdI12RUnKE=/0x0:1826x1026/1200x800/filters:focal(801x301:1093x593)/cdn.vox-cdn.com/uploads/chorus_image/image/56175997/f0ba9e4e_168b_49d4_8ce1_133cbe30a5a0.0.jpg">
+      </div>
 
-					</picture>
 
-				</a>
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/s6Ig8H1BJPG_YHEt0Ae673gi28g=/0x0:2040x1360/85x57/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/ndcJmrWRz4Zk3lz3YTL04q3b_hM=/0x0:2040x1360/185x123/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/NcerCv4EB8x4xjd0fB_mkIA1ZXc=/0x0:2040x1360/285x190/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/oF5qI3G2dWAmdEVngrcBXIk9m60=/0x0:2040x1360/385x257/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/mdQiT6x8zBST39sxba0sx5-wTaA=/0x0:2040x1360/485x323/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/vhX7ETVHGm3BHwBSGNqDA8OVBVw=/0x0:2040x1360/585x390/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/5RyqiAOsz20IxjbII3XEvd8IW2w=/0x0:2040x1360/1200x800/filters:focal(825x489:1151x815)/cdn.vox-cdn.com/uploads/chorus_image/image/56253939/jbareham_170105_1368_0168.0.jpg">
+        <div class="seven-main-contents__type2__body">
+          Game of thornes season 7 episode 5 episode go and watch it!!! <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-				<div class="seven-main-contents__type1__body">
-					Blizzard revives battles net and admits it made a mastella with rebranding.
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
+        </div>
 
 
-				</div>
+      </div>
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/0RluDnIETQ1HDAJ-cz9qrvrcxl0=/0x0:3300x2100/85x57/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/0vWh7gK7fyUzvMyys7DV_EwUT3E=/0x0:3300x2100/185x123/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/fM0LWvyRpijdiP7ZBPrWNQJKbto=/0x0:3300x2100/285x190/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/MSXpei2G-DriRfI0jz_gBauaLTk=/0x0:3300x2100/385x257/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/jvF-hK0K2ufBqyYibBmWR-F5HjA=/0x0:3300x2100/485x323/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/KReISAnIyiV6DNRwK86RBa8h4EA=/0x0:3300x2100/585x390/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/habEvbxXnSSbun7ax394K7V0BU8=/0x0:3300x2100/1200x800/filters:focal(1035x719:1563x1247)/cdn.vox-cdn.com/uploads/chorus_image/image/56280953/8th_Gen_Intel_Core_U_series_front.0.jpg">
 
+        <div class="seven-main-contents__type2__body">
+          Sonic mania review: go and find whatever u need!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
+        </div>
 
-			</div>
 
+      </div>
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/-YrC0jZtXtdVq30nstlXHEt3EI4=/0x0:850x432/85x57/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 85w, https://cdn.vox-cdn.com/thumbor/B8xWf2kriWWJq07hVkB_cpjGR-g=/0x0:850x432/185x123/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 185w, https://cdn.vox-cdn.com/thumbor/ipdueeWNJUwylKk_4a01k1ptvlU=/0x0:850x432/285x190/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 285w, https://cdn.vox-cdn.com/thumbor/pJO08kFCfF2spUhBaXcEhWsPVvI=/0x0:850x432/385x257/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 385w, https://cdn.vox-cdn.com/thumbor/vOMT8d1Wwhle8mOJD9GWPDYv-a0=/0x0:850x432/485x323/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 485w, https://cdn.vox-cdn.com/thumbor/_nwkM3rK18B1ZNbm08PPwHCUjV4=/0x0:850x432/585x390/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/4aOy_rErmq_bR7DMoqGukuyrLAA=/0x0:850x432/1200x800/filters:focal(357x148:493x284):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif">
+        <div class="seven-main-contents__type2__body">
+          Sonic mania review: go and find whatever u need!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/Aaz2aDHPWm4S5Un7C1XBdHortyY=/0x0:4928x3280/85x57/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/DLvS-ciwcRoudzk9rO22id7J1zQ=/0x0:4928x3280/185x123/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/rNmhSH3FB4CpuMdsG9YX6b7HXXM=/0x0:4928x3280/285x190/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/J2XerWpZOXjjK6dp46z7mFNzmtA=/0x0:4928x3280/385x257/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/nm9PLhnfZhRv31_WAQEtFuxR9N0=/0x0:4928x3280/485x323/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/MgG6XclZyppEKzHKZMi4uk6pd5s=/0x0:4928x3280/585x390/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/orpBOLlnMLXv2WRIlRLD-DOTCBQ=/0x0:4928x3280/1200x800/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg">
+        </div>
 
-				<div class="seven-main-contents__type2__body">
-					Game of thornes season 7 episode 5 episode go and watch it!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-				</div>
+      </div>
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/7qCGlFh2L-xRUrpMXQNqb7WAtqM=/0x0:3733x2100/85x57/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 85w, https://cdn.vox-cdn.com/thumbor/Qxn8nAarQPw0_MHI3VW0y-kuWpw=/0x0:3733x2100/185x123/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 185w, https://cdn.vox-cdn.com/thumbor/pDbs-lfBE2q5uRk4Nqvv0CZjXpY=/0x0:3733x2100/285x190/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 285w, https://cdn.vox-cdn.com/thumbor/VpYKCgH_8eKREyaF0VEMo4rmMi4=/0x0:3733x2100/385x257/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 385w, https://cdn.vox-cdn.com/thumbor/7xjxgrnJH9fBieOgO-v7jreStT8=/0x0:3733x2100/485x323/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 485w, https://cdn.vox-cdn.com/thumbor/SWs-7zbsjI81TIHHG4fG_j-fnvs=/0x0:3733x2100/585x390/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/ASBBB__smZpTQt3Ypv_Bg9D5Ef0=/0x0:3733x2100/1200x800/filters:focal(1569x752:2165x1348)/cdn.vox-cdn.com/uploads/chorus_image/image/56288473/3af59c767836980b246e0e339f9f14b717c512a953a41fe6f07c871eef7ec8e1.1503330121.jpg">
+        <div class="seven-main-contents__type2__body">
+          Sonic mania review: go and find whatever u need!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
+        </div>
 
-			</div>
 
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/TtyWhtlBczV0dV-W3gdqN6eEXpo=/0x0:848x480/85x57/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 85w, https://cdn.vox-cdn.com/thumbor/OWY2Dq02fYIMrj15W3-lz94u4es=/0x0:848x480/185x123/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 185w, https://cdn.vox-cdn.com/thumbor/cQZoQjd5A4SaN2vIOWQinLMCtyA=/0x0:848x480/285x190/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 285w, https://cdn.vox-cdn.com/thumbor/3xszSzChQBYWkjXCN7Q_AnGs9cY=/0x0:848x480/385x257/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 385w, https://cdn.vox-cdn.com/thumbor/NucRt4Jrh5-Qt2Q_NzpT6mC69_s=/0x0:848x480/485x323/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 485w, https://cdn.vox-cdn.com/thumbor/FsuZMPKeWK9w7O9DPlisqoSyS78=/0x0:848x480/585x390/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/UOQZ-WlZAxvFiqcKvQJiUmZQjso=/0x0:848x480/1200x800/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png">
-				<div class="seven-main-contents__type2__body">
-					Sonic mania review: go and find whatever u need!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
+      </div>
+      <div class="seven-main-contents-type2">
+        <img srcset="https://cdn.vox-cdn.com/thumbor/Aaz2aDHPWm4S5Un7C1XBdHortyY=/0x0:4928x3280/85x57/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/DLvS-ciwcRoudzk9rO22id7J1zQ=/0x0:4928x3280/185x123/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/rNmhSH3FB4CpuMdsG9YX6b7HXXM=/0x0:4928x3280/285x190/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/J2XerWpZOXjjK6dp46z7mFNzmtA=/0x0:4928x3280/385x257/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/nm9PLhnfZhRv31_WAQEtFuxR9N0=/0x0:4928x3280/485x323/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/MgG6XclZyppEKzHKZMi4uk6pd5s=/0x0:4928x3280/585x390/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 585w"
+          sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/orpBOLlnMLXv2WRIlRLD-DOTCBQ=/0x0:4928x3280/1200x800/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg">
 
-				</div>
+        <div class="seven-main-contents__type2__body">
+          Sonic mania review: go and find whatever u need!!!
+          <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
+        </div>
 
-			</div>
 
+      </div>
+      <div class="seven-main-contents__type3">
+        <div class="articles__ad-box__left-1">
+          <h2 class="articles__ad-box__left_title-1">
+            <a>Neil Gaiman’s Good Omens TV show just cast the perfect devil in David Tennant</a>
 
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/HWmteywnCml_kMDRyDxXKSDTDhY=/0x0:800x534/85x57/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 85w, https://cdn.vox-cdn.com/thumbor/w53c20pwGd_ARZf5aJty1pPYL2E=/0x0:800x534/185x123/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 185w, https://cdn.vox-cdn.com/thumbor/DyuM95no9ECId2otmaT6ay-wSac=/0x0:800x534/285x190/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 285w, https://cdn.vox-cdn.com/thumbor/539ub7vsJDlebSl5XvzPWiAwxQU=/0x0:800x534/385x257/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 385w, https://cdn.vox-cdn.com/thumbor/Vk33zWsADbPV3zw12JvUdXTD9xI=/0x0:800x534/485x323/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 485w, https://cdn.vox-cdn.com/thumbor/FeRG3yKbqzL4zPdUkeOOaiNKSSg=/0x0:800x534/585x390/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/cwKXHpTJv698AxyyS5RDF_yUa2Y=/0x0:800x534/1200x800/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif">
-				<div class="seven-main-contents__type2__body">
-					Game of thornes season 7 episode 5 episode go and watch it!!! <a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
+          </h2>
+          <div>
+            by <a class=".footer-wrapper__items__content3_1">RAHUL MR</a>
+          </div>
 
-				</div>
+        </div>
+        <div>
+          <p class="articles__ad-box__right-1">All part of a great big ineffable plan</p>
 
+        </div>
 
-			</div>
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/Aaz2aDHPWm4S5Un7C1XBdHortyY=/0x0:4928x3280/85x57/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/DLvS-ciwcRoudzk9rO22id7J1zQ=/0x0:4928x3280/185x123/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/rNmhSH3FB4CpuMdsG9YX6b7HXXM=/0x0:4928x3280/285x190/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/J2XerWpZOXjjK6dp46z7mFNzmtA=/0x0:4928x3280/385x257/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/nm9PLhnfZhRv31_WAQEtFuxR9N0=/0x0:4928x3280/485x323/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/MgG6XclZyppEKzHKZMi4uk6pd5s=/0x0:4928x3280/585x390/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/orpBOLlnMLXv2WRIlRLD-DOTCBQ=/0x0:4928x3280/1200x800/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg">
+      </div>
+    </div>
+    <div class="articles_wrapper">
+      <div class="articles_lwrapper">
+        <div class="articles">
+          <div style="background-color:#6a6a6a;">
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
-				<div class="seven-main-contents__type2__body">
-					Sonic mania review: go and find whatever u need!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-				</div>
 
 
-			</div>
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/HWmteywnCml_kMDRyDxXKSDTDhY=/0x0:800x534/85x57/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 85w, https://cdn.vox-cdn.com/thumbor/w53c20pwGd_ARZf5aJty1pPYL2E=/0x0:800x534/185x123/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 185w, https://cdn.vox-cdn.com/thumbor/DyuM95no9ECId2otmaT6ay-wSac=/0x0:800x534/285x190/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 285w, https://cdn.vox-cdn.com/thumbor/539ub7vsJDlebSl5XvzPWiAwxQU=/0x0:800x534/385x257/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 385w, https://cdn.vox-cdn.com/thumbor/Vk33zWsADbPV3zw12JvUdXTD9xI=/0x0:800x534/485x323/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 485w, https://cdn.vox-cdn.com/thumbor/FeRG3yKbqzL4zPdUkeOOaiNKSSg=/0x0:800x534/585x390/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/cwKXHpTJv698AxyyS5RDF_yUa2Y=/0x0:800x534/1200x800/filters:focal(336x203:464x331):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/56179281/acastro_170810_1911_0001.0.gif">
-				<div class="seven-main-contents__type2__body">
-					Sonic mania review: go and find whatever u need!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-				</div>
+                </div>
 
 
-			</div>
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/TtyWhtlBczV0dV-W3gdqN6eEXpo=/0x0:848x480/85x57/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 85w, https://cdn.vox-cdn.com/thumbor/OWY2Dq02fYIMrj15W3-lz94u4es=/0x0:848x480/185x123/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 185w, https://cdn.vox-cdn.com/thumbor/cQZoQjd5A4SaN2vIOWQinLMCtyA=/0x0:848x480/285x190/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 285w, https://cdn.vox-cdn.com/thumbor/3xszSzChQBYWkjXCN7Q_AnGs9cY=/0x0:848x480/385x257/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 385w, https://cdn.vox-cdn.com/thumbor/NucRt4Jrh5-Qt2Q_NzpT6mC69_s=/0x0:848x480/485x323/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 485w, https://cdn.vox-cdn.com/thumbor/FsuZMPKeWK9w7O9DPlisqoSyS78=/0x0:848x480/585x390/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/UOQZ-WlZAxvFiqcKvQJiUmZQjso=/0x0:848x480/1200x800/filters:focal(357x173:491x307)/cdn.vox-cdn.com/uploads/chorus_image/image/56179149/SPZ_ST5_1479223337.0.png">
-				<div class="seven-main-contents__type2__body">
-					Sonic mania review: go and find whatever u need!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
 
-				</div>
+              </div>
 
 
-			</div>
-			<div class="seven-main-contents-type2">
-				<img srcset="https://cdn.vox-cdn.com/thumbor/Aaz2aDHPWm4S5Un7C1XBdHortyY=/0x0:4928x3280/85x57/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 85w, https://cdn.vox-cdn.com/thumbor/DLvS-ciwcRoudzk9rO22id7J1zQ=/0x0:4928x3280/185x123/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 185w, https://cdn.vox-cdn.com/thumbor/rNmhSH3FB4CpuMdsG9YX6b7HXXM=/0x0:4928x3280/285x190/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 285w, https://cdn.vox-cdn.com/thumbor/J2XerWpZOXjjK6dp46z7mFNzmtA=/0x0:4928x3280/385x257/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 385w, https://cdn.vox-cdn.com/thumbor/nm9PLhnfZhRv31_WAQEtFuxR9N0=/0x0:4928x3280/485x323/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 485w, https://cdn.vox-cdn.com/thumbor/MgG6XclZyppEKzHKZMi4uk6pd5s=/0x0:4928x3280/585x390/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg 585w"
-				 sizes="30vw" src="https://cdn.vox-cdn.com/thumbor/orpBOLlnMLXv2WRIlRLD-DOTCBQ=/0x0:4928x3280/1200x800/filters:focal(2070x1246:2858x2034)/cdn.vox-cdn.com/uploads/chorus_image/image/56189101/INFINITI_Prototype_9_02.0.jpg">
+            </div>
 
-				<div class="seven-main-contents__type2__body">
-					Sonic mania review: go and find whatever u need!!!
-					<a href="#" class="footer-wrapper__items__content3_1"> by Andrews</a>
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/OgLy9WR0cOLQSr9Pj231VXg0MPY=/0x0:2560x1440/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56292535/Relu_mi_no_1.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503382504_8599_44473" data-cdata="{&quot;image_id&quot;:56292535,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
-				</div>
 
 
-			</div>
-		</div>
 
-		<div class="articles">
-			<div style="background-color:#6a6a6a;">
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
 
+                </div>
 
 
 
+              </div>
 
-						</div>
 
+            </div>
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/7pAzP87oTuJIWKMEswidbhh-4v8=/0x350:6720x4130/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56292013/akrales_170821_1933_0331.1503341212.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384421_807_102214" data-cdata="{&quot;image_id&quot;:56292013,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
 
-					</div>
 
 
-				</div>
 
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/khFYoCEJVJFprNC3ko28YUwq47c=/36x0:1826x1007/280x158/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56211259/thg-mockingjay-part2-07.0.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502854053_8401_17222" data-cdata="{&quot;image_id&quot;:56211259,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+                </div>
 
 
 
+              </div>
 
 
-						</div>
+            </div>
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/YnyeCCFpg6YysJ5rnKRc4nACFAE=/0x212:2040x1360/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56291353/byford_bmw_m5_.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384421_3235_102218" data-cdata="{&quot;image_id&quot;:56291353,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
 
 
-					</div>
 
 
-				</div>
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+                </div>
 
 
 
+              </div>
 
 
-						</div>
+            </div>
 
 
+          </div>
 
-					</div>
+          <div class="articles__ad-box">
+            <div class="articles__ad-box__left">
+              <h2 class="articles__ad-box__left_title">
+                <a>Neil Gaiman’s Good Omens TV show just cast the perfect devil in David Tennant</a>
 
+              </h2>
+              <div>
+                by <a class=".footer-wrapper__items__content3_1">RAHUL MR</a>
+              </div>
 
-				</div>
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+            </div>
+            <div>
+              <p class="articles__ad-box__right">“All part of a great big ineffable plan”</p>
 
+            </div>
 
 
 
+          </div>
+          <div style="background-color: #6a6a6a">
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XclFMl4H_7ZcQP4AKJQb4aLIvV4=/0x0:3155x1775/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56288561/73fd31b72234e915a6a75dafe20c749e87fb3d47a96a2c4dadc0bd80e5c5917bd7726efe935d61c0aa5decf87db9ef94.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384099_9791_37004" data-cdata="{&quot;image_id&quot;:56288561,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
-						</div>
 
 
 
-					</div>
 
+                </div>
 
-				</div>
 
 
-			</div>
+              </div>
 
-			<div class="articles__ad-box">
-				<div class="articles__ad-box__left">
-					<h2 class="articles__ad-box__left_title">
-						<a>Neil Gaiman’s Good Omens TV show just cast the perfect devil in David Tennant</a>
 
-					</h2>
-					<div>
-						by <a class=".footer-wrapper__items__content3_1">RAHUL MR</a>
-					</div>
+            </div>
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/QOYy4ttVagLZ2bYn3-yEBdpGlhQ=/42x0:799x426/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56285727/Screenshot_2017_08_21__8_55_AM.0.png"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384100_5383_37043" data-cdata="{&quot;image_id&quot;:56285727,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
-				</div>
-				<div>
-					<p class="articles__ad-box__right">“All part of a great big ineffable plan”</p>
 
-				</div>
 
 
 
-			</div>
-			<div style="background-color: #6a6a6a">
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+                </div>
 
 
 
+              </div>
 
 
-						</div>
+            </div>
 
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/4OsUrOwH2OtGxh4TT1263MCTioY=/0x0:1920x1080/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56285087/FINAL_FANTASY_XV_20161127124125.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384100_8040_37058" data-cdata="{&quot;image_id&quot;:56285087,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
 
-					</div>
 
 
-				</div>
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
 
+                </div>
 
 
 
+              </div>
 
-						</div>
 
+            </div>
+            <div class="articles__content">
+              <img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/ERnSItapr_trYhQRyLm3EzQgNGY=/1x0:1745x981/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56278659/wH46sNl.0.jpg"
+                alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503384100_5829_37090" data-cdata="{&quot;image_id&quot;:56278659,&quot;ratio&quot;:&quot;*&quot;}">
+              <div class="articles__contents_type1">
+                Sonic mania review: go and find whatever u need!!!
+                <div class="articles__contents_type2">
+                  <a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
+                  <div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
+                  <div class="articles__contents_type1_body_bottom">2 comments</div>
 
 
-					</div>
 
 
-				</div>
 
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+                </div>
 
 
 
+              </div>
 
 
-						</div>
+            </div>
 
 
 
-					</div>
 
 
-				</div>
-				<div class="articles__content">
-					<img width="96px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/XNndgEqwNeK5TFLZ_fjO-TGNJ58=/0x0:640x427/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56196287/billgatestock.0.jpg"
-					 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502796671_2334_11540" data-cdata="{&quot;image_id&quot;:56196287,&quot;ratio&quot;:&quot;*&quot;}">
-					<div class="articles__contents_type1">
-						Sonic mania review: go and find whatever u need!!!
-						<div class="articles__contents_type2">
-							<a href="#" class="articles__contents_type1_body articles__after articles__contents_type2"> by Andrews</a>
-							<div class="articles__contents_type1_body_bottom articles__after">28 minutes ago</div>
-							<div class="articles__contents_type1_body_bottom">2 comments</div>
+          </div>
+          <div class="articles__ad-box">
+            <div class="articles__ad-box__left">
+              <h2 class="articles__ad-box__left_title">
+                <a>Neil Gaiman’s Good Omens TV show just cast the perfect devil in David Tennant</a>
 
+              </h2>
+              <div>
+                by <a class=".footer-wrapper__items__content3_1">RAHUL MR</a>
+              </div>
 
+            </div>
+            <div>
+              <p class="articles__ad-box__right">“All part of a great big ineffable plan”</p>
 
+            </div>
 
 
-						</div>
 
+          </div>
 
+        </div>
 
-					</div>
 
+        <div class="guide">
+          <div class="guide__logo">
+            <div class="guide__logo_left">
+              <img style="width:109px; height:50px;" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/55851773/guidebook-logo-transparent.0.png"
+                alt="Reviews">
+            </div>
+            <div class="guide__logo_right">
+              <a class="guide__logo_view">View all</a>
+            </div>
+          </div>
+          <ul class="guide__blocks">
+            <li class="guide__blocks_elements">
+              <div style="width:35%; float:left;">
+                <img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/f0P0dY3ZzdzbM41Sh3eELmUJx84=/0x0:2040x1360/400x267/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56155231/akrales_170810_1903_0070.0.jpg"
+                  alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
+              </div>
+              <div class="guide__blocks_content">
+                get noticed about fake sites.
+              </div>
 
-				</div>
+              <li class="guide__blocks_elements">
+                <div style="width:35%; float:left;">
+                  <img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/4-Ey8qJUEZuR-GZQhviM5z8l-QE=/0x0:2040x1360/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56216837/akrales_170809_1905_0024.0.jpg"
+                    alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797"
+                    data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
+                </div>
+                <div class="guide__blocks_content">
+                  How to make google phone.
+                </div>
 
+                <li class="guide__blocks_elements">
+                  <div style="width:35%; float:left;">
+                    <img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/R5NJJ4RZ8UACBBf9AKBdM4HLH_E=/0x0:2040x1360/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56209979/akrales_170524_1695_0155.0.jpg"
+                      alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797"
+                      data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
+                  </div>
+                  <div class="guide__blocks_content">
+                    Android wear senseless
+                  </div>
+                  <li class="guide__blocks_elements">
+                    <div style="width:35%; float:left;">
+                      <img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/f0P0dY3ZzdzbM41Sh3eELmUJx84=/0x0:2040x1360/400x267/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56155231/akrales_170810_1903_0070.0.jpg"
+                        alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797"
+                        data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
+                    </div>
+                    <div class="guide__blocks_content">
+                      get noticed about fake sites.
+                    </div>
 
 
 
 
-			</div>
-			<div class="articles__ad-box">
-				<div class="articles__ad-box__left">
-					<h2 class="articles__ad-box__left_title">
-						<a>Neil Gaiman’s Good Omens TV show just cast the perfect devil in David Tennant</a>
 
-					</h2>
-					<div>
-						by <a class=".footer-wrapper__items__content3_1">RAHUL MR</a>
-					</div>
 
-				</div>
-				<div>
-					<p class="articles__ad-box__right">“All part of a great big ineffable plan”</p>
 
-				</div>
+          </ul>
+        </div>
+      </div>
+      <div class="circuit-breaker">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 216 42.9" style="enable-background:new 0 0 216 42.9;" xml:space="preserve">
+          <style type="text/css">
+            .st0 {
+              fill: #EC008C;
+            }
 
+            .st1 {
+              fill: #0078FF;
+            }
+          </style>
+          <g>
+            <path class="st0" d="M113.5,4l-0.1-0.1c-0.1-0.1-0.5-0.3-0.7-0.5c-3.4-2.2-7.3-3.4-11.6-3.4C89.2,0,79.7,9.6,79.7,21.4
+								c0,4.3,1.2,8.3,3.4,11.6c0.1,0.2,0.4,0.7,0.5,0.7l0.1,0.1c0.3,0.3,0.8,0.3,1.1,0.1l0.7-0.7l4.6-4.6c0.9,0.4,2,0.3,2.7-0.5
+								c1-1,1-2.5,0-3.5c-1-1-2.5-1-3.5,0c-0.7,0.7-0.9,1.8-0.5,2.7l-4.3,4.3l0,0c-1.8-3-2.9-6.5-2.9-10.3c0-10.8,8.8-19.6,19.6-19.6
+								c3.8,0,7.3,1.1,10.3,2.9l0,0L107,9.1c-0.9-0.4-2-0.2-2.7,0.5c-1,1-1,2.5,0,3.5s2.5,1,3.5,0c0.8-0.8,0.9-1.8,0.5-2.7l4.5-4.5l0,0
+								l0.7-0.7C113.8,4.8,113.8,4.3,113.5,4z"></path>
+            <path class="st0" d="M112.3,21.1c0,6.2-5,11.2-11.2,11.2c-0.2,0-0.3,0-0.5,0c-0.1,0.6-0.4,1.2-0.8,1.7c0.4,0.1,0.9,0.1,1.3,0.1
+								c7.2,0,13-5.8,13-13c0-0.4,0-0.9-0.1-1.4c-0.5,0.4-1.1,0.7-1.7,0.8C112.3,20.7,112.3,20.9,112.3,21.1z"></path>
+            <path class="st0" d="M133.4,32.6l-1.1,1.3h-2.9V8.1h4.2v8.9c0.5-0.7,1.7-1.6,3.2-1.6c2.6,0,4.2,2,4.2,4.8v9.2
+								c0,2.8-1.8,4.8-4.4,4.8C134.8,34.3,133.8,33.3,133.4,32.6z M136.9,28.3v-7c0-1.2-0.4-2.1-1.6-2.1c-1.1,0-1.6,0.8-1.6,2.1v7
+								c0,1.2,0.5,2.1,1.6,2.1C136.4,30.4,136.9,29.6,136.9,28.3z"></path>
+            <path class="st0" d="M148,33.9h-4.2V15.8h2.9l0.6,1.5c0.4-0.8,1.5-1.8,3.1-1.8c0.2,0,0.4,0,0.7,0.1v4.6c-0.4-0.2-0.8-0.3-1.3-0.3
+								c-1,0-1.9,0.8-1.9,2V33.9z"></path>
+            <path class="st0" d="M153.3,28.7V21c0-3.3,2.2-5.5,5.8-5.5c3.5,0,5.6,2.2,5.6,5.5v4.8h-7.2v3c0,1.1,0.3,2,1.6,2
+								c1.3,0,1.5-0.9,1.5-1.5v-1.7h4v2c0,2.9-2,4.7-5.6,4.7C155.5,34.3,153.3,32.1,153.3,28.7z M157.5,22.8h3.1v-1.7
+								c0-1.1-0.3-2.1-1.5-2.1c-1.3,0-1.6,1-1.6,2.1V22.8z"></path>
+            <path class="st0" d="M171.4,34.3c-3.1,0-4.5-2.3-4.5-4.5v-0.9c0-2.1,0.9-3.7,3.4-5l3.7-2v-1.5c0-0.9-0.6-1.3-1.4-1.3
+								c-1,0-1.4,0.6-1.4,1.4v1.8h-3.9v-2.1c0-2.6,2-4.6,5.5-4.6c3.6,0,5.3,2,5.3,4.9v10.1c0,0.1,0.1,0.2,0.2,0.2h0.5v3.4H177
+								c-1,0-1.9-0.3-2.4-1.1C174,33.7,173,34.3,171.4,34.3z M174,29v-3.7l-1.8,1.1c-0.8,0.6-1.1,1.3-1.1,2.2v0.7c0,0.7,0.4,1.4,1.4,1.4
+								C173.4,30.8,174,30.3,174,29z"></path>
+            <path class="st0" d="M185.6,33.9h-4.2V8.1h4.2V23l2.9-7.2h4.5l-3.5,8l4,10.2h-4.6l-3.2-8.8V33.9z"></path>
+            <path class="st0" d="M194.6,28.7V21c0-3.3,2.2-5.5,5.8-5.5c3.5,0,5.6,2.2,5.6,5.5v4.8h-7.2v3c0,1.1,0.3,2,1.6,2
+								c1.3,0,1.5-0.9,1.5-1.5v-1.7h4v2c0,2.9-2,4.7-5.6,4.7C196.8,34.3,194.6,32.1,194.6,28.7z M198.8,22.8h3.1v-1.7
+								c0-1.1-0.3-2.1-1.5-2.1c-1.3,0-1.6,1-1.6,2.1V22.8z"></path>
+            <path class="st0" d="M212.9,33.9h-4.2V15.8h2.9l0.6,1.5c0.4-0.8,1.5-1.8,3.1-1.8c0.2,0,0.4,0,0.7,0.1v4.6c-0.4-0.2-0.8-0.3-1.3-0.3
+								c-1,0-1.9,0.8-1.9,2V33.9z"></path>
+            <path class="st1" d="M119.2,10.1c-0.1-0.2-0.2-0.4-0.3-0.5c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.1l-0.1-0.1
+								c-0.3-0.3-0.8-0.3-1.1-0.1l-0.7,0.7l-4.5,4.5c-0.9-0.4-2-0.2-2.7,0.5c-1,1-1,2.5,0,3.5c1,1,2.5,1,3.5,0c0.8-0.8,0.9-1.8,0.5-2.7
+								l4.2-4.2l0,0c1.8,2.9,2.8,6.4,2.8,10.1c0,10.8-8.8,19.6-19.6,19.6c-3.7,0-7.1-1-10.1-2.8l4.3-4.3c0.9,0.4,2,0.2,2.7-0.5
+								c1-1,1-2.5,0-3.5c-1-1-2.5-1-3.5,0c-0.7,0.7-0.9,1.8-0.5,2.7l-4.6,4.6l-0.6,0.6c-0.3,0.3-0.3,0.9,0,1.2l0.1,0.1
+								c0.1,0.1,0.2,0.1,0.2,0.1c0.2,0.1,0.4,0.2,0.5,0.3c3.3,2.1,7.2,3.3,11.4,3.3c11.8,0,21.4-9.6,21.4-21.4
+								C122.5,17.3,121.3,13.4,119.2,10.1z"></path>
+            <path class="st1" d="M101.1,8.1c-7.2,0-13,5.8-13,13c0,0.6,0.1,1.1,0.1,1.7c0.5-0.4,1.1-0.8,1.7-0.9c0-0.3-0.1-0.5-0.1-0.8
+								c0-6.2,5-11.2,11.2-11.2c0.3,0,0.5,0,0.8,0.1c0.2-0.6,0.4-1.2,0.9-1.7C102.2,8.1,101.7,8.1,101.1,8.1z"></path>
+            <path class="st1" d="M5.7,34.3c-3.6,0-5.7-2.2-5.7-5.5V21c0-3.3,2.2-5.5,5.7-5.5c3.6,0,5.6,1.8,5.6,4.7v2.4h-4v-2.1
+								c0-0.6-0.3-1.5-1.5-1.5c-1.3,0-1.6,0.9-1.6,2v7.8c0,1.1,0.3,2,1.6,2c1.3,0,1.5-0.9,1.5-1.5v-2.3h4v2.7C11.4,32.5,9.4,34.3,5.7,34.3
+								z"></path>
+            <path class="st1" d="M13.9,33.9V15.8h4.2v18.2H13.9z"></path>
+            <path class="st1" d="M25.2,33.9H21V15.8h2.9l0.6,1.5c0.4-0.8,1.5-1.8,3.1-1.8c0.2,0,0.4,0,0.7,0.1v4.6c-0.4-0.2-0.8-0.3-1.3-0.3
+								c-1,0-1.9,0.8-1.9,2V33.9z"></path>
+            <path class="st1" d="M35.8,34.3c-3.6,0-5.7-2.2-5.7-5.5V21c0-3.3,2.2-5.5,5.7-5.5c3.6,0,5.6,1.8,5.6,4.7v2.4h-4v-2.1
+								c0-0.6-0.3-1.5-1.5-1.5c-1.3,0-1.6,0.9-1.6,2v7.8c0,1.1,0.3,2,1.6,2c1.3,0,1.5-0.9,1.5-1.5v-2.3h4v2.7
+								C41.4,32.5,39.4,34.3,35.8,34.3z"></path>
+            <path class="st1" d="M48,34.3c-2.5,0-4.1-2-4.1-4.8V15.8h4.2v12.5c0,1.2,0.4,2,1.5,2c1.1,0,1.5-0.7,1.5-2V15.8h4.2v18.2h-3.2
+								l-0.8-1.5C50.6,33.6,49.3,34.3,48,34.3z"></path>
+            <path class="st1" d="M58.3,33.9V15.8h4.2v18.2H58.3z"></path>
+            <path class="st1" d="M70.8,30.6h1.6v3.4h-3.4c-2,0-2.8-1.3-2.8-2.9V19.1h-1.5v-3.4h1.5V8.1h4.2v7.6h2.2v3.4h-2.2v11.1
+								C70.5,30.5,70.6,30.6,70.8,30.6z"></path>
+            <circle class="st1" cx="60.5" cy="11.6" r="2.7"></circle>
+            <circle class="st1" cx="16" cy="11.6" r="2.7"></circle>
+          </g>
+        </svg>
+        <div class="circuit-breaker_body">
+          <img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/R5NJJ4RZ8UACBBf9AKBdM4HLH_E=/0x0:2040x1360/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56209979/akrales_170524_1695_0155.0.jpg"
+            alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
+          <img class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/_eDYnC6ChmpG8bYA-Z36j5rA_Qo=/0x358:1132x995/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56292403/818886914.0.jpg"
+            alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503382504_757_44477" data-cdata="{&quot;image_id&quot;:56292403,&quot;ratio&quot;:&quot;*&quot;}">
+          <img class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/YnyeCCFpg6YysJ5rnKRc4nACFAE=/0x212:2040x1360/560x315/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56291353/byford_bmw_m5_.0.jpg"
+            alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503382504_5090_44485" data-cdata="{&quot;image_id&quot;:56291353,&quot;ratio&quot;:&quot;*&quot;}">
+          <img class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/lsbyQAWKk_maql1BZ3N4i-iigqA=/101x0:749x432/800x534/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56287761/migrationmap.0.gif"
+            alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1503385849_4129_66840" data-cdata="{&quot;image_id&quot;:56287761,&quot;ratio&quot;:&quot;standard&quot;}">
+        </div>
+      </div>
 
 
-			</div>
+    </div>
+    <div class="more-stories">
 
-		</div>
+      <div class="more-stories__content">more stories</div>
 
 
-		<div class="guide">
-			<div class="guide__logo">
-				<div class="guide__logo_left">
-					<img style="width:109px; height:50px;" src="https://cdn.vox-cdn.com/uploads/chorus_image/image/55851773/guidebook-logo-transparent.0.png"
-					 alt="Reviews">
-				</div>
-				<div class="guide__logo_right">
-					<a class="guide__logo_view">View all</a>
-				</div>
-			</div>
-			<ul class="guide__blocks">
-				<li class="guide__blocks_elements">
-					<div style="width:35%; float:left;">
-						<img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/f0P0dY3ZzdzbM41Sh3eELmUJx84=/0x0:2040x1360/400x267/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56155231/akrales_170810_1903_0070.0.jpg"
-						 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
-					</div>
-					<div class="guide__blocks_content">
-						get noticed about fake sites.
-					</div>
 
-					<li class="guide__blocks_elements">
-						<div style="width:35%; float:left;">
-							<img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/4-Ey8qJUEZuR-GZQhviM5z8l-QE=/0x0:2040x1360/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56216837/akrales_170809_1905_0024.0.jpg"
-							 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
-						</div>
-						<div class="guide__blocks_content">
-							How to make google phone.
-						</div>
 
-						<li class="guide__blocks_elements">
-							<div style="width:35%; float:left;">
-								<img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/R5NJJ4RZ8UACBBf9AKBdM4HLH_E=/0x0:2040x1360/200x134/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56209979/akrales_170524_1695_0155.0.jpg"
-								 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
-							</div>
-							<div class="guide__blocks_content">
-								Android wear senseless
-							</div>
-							<li class="guide__blocks_elements">
-								<div style="width:35%; float:left;">
-									<img width="100px" class="c-dynamic-image lazy-image lazy-loaded" src="https://cdn.vox-cdn.com/thumbor/f0P0dY3ZzdzbM41Sh3eELmUJx84=/0x0:2040x1360/400x267/filters:format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56155231/akrales_170810_1903_0070.0.jpg"
-									 alt="" data-chorus-optimize-field="main_image" data-cid="site/dynamic_size_image-1502864673_9973_13797" data-cdata="{&quot;image_id&quot;:56155231,&quot;ratio&quot;:&quot;*&quot;}">
-								</div>
-								<div class="guide__blocks_content">
-									get noticed about fake sites.
-								</div>
+    </div>
 
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-logo">
 
+          <svg fill="#fff" height="42.42px" width="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 291.4 1280 217.2">
+            <path d="M0 292.1v58.1h39.7v153.2h67.1V292.1M220.1 372.4h-31.4v-22.3h15.8v-58h-82.8v211.3h67v-79.9h31.4v79.9h67.2V292.1h-67.2M302 503.4h124.3v-58.2h-60.2v-24.6h38.3v-48.2h-38.3v-22.2h60.2v-58.1H302M954.8 363.6c0-45.6-33.7-71.5-81.5-71.5h-74.7v211.2h67.1v-54.1l38.4 54.1h75.7l-54.4-81c19.6-10.7 29.4-30.2 29.4-58.7M865.5 387v-39.3c9.3 0 20.7 2.8 24.1 13 .3.9.5 1.9.8 2.9 0 .1 0 .3.1.4.1 1 .3 2.2.3 3.4 0 15.7-14.3 19.6-25.3 19.6M559.2 420.8h-.6l-4.8-17.4-15-53.1h26.4l17.4-58.2h-134l76.8 211.2h68.8l8.3-22.6s36.8-99.8 56.9-154.2v176.8h124.3v-58.2h-60.2v-24.6h38.2v-48.1h-38.2v-22.2h60.2V292H598l-38.8 128.8zM1280 350.3v-58.1h-124.3v211.2H1280v-58.2h-60.3v-24.6h38.3v-48h-38.3v-22.3"></path>
+            <path d="M1142.8 459.1V373H1048v48h35.3v17.1c-2.7 2.4-8.5 3.7-14.5 3.7-24.6 0-42.8-19.4-42.8-43.1s17.7-44.7 42.3-44.7c14.9 0 50.2.1 50.2.1v-62.6h-16.1c-30 0-59.9-2.4-87.4 11.8-21.7 11.2-38.9 30.2-48 52.8-5.3 13.3-8 27.7-8 42 0 59.9 47 110.4 107.9 110.4 30.2 0 59.7-11.3 75.8-25.4.1-14.6.1-16.8.1-24"></path>
+          </svg>
 
+        </div>
+        <div class="footer-wrapper__items">
+          <ul class="footer-wrapper__items_list1">
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Terms of Use</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">privacy policy</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Communication preferences</a></li>
+          </ul>
+          <ul class="footer-wrapper__items_list1">
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Contacts</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">	ip us</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Community guildlines</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">About</a></li>
+            <li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Ethics</a></li>
+          </ul>
+          <div class="footer-wrapper__items__content3">
+            All Sysytems OPerational
+            <div class="footer-wrapper__items__content3_1">
 
+              check our status page for more details
+            </div>
+          </div>
+        </div>
 
+        <div class="footer-wrapper__last-content">
 
-
-			</ul>
-		</div>
-<div class="more-stories">
-
-<div class="more-stories__content">more stories</div>
-
-
-
-
-</div>
-
-		<footer>
-			<div class="footer-wrapper">
-				<div class="footer-logo">
-
-					<svg fill="#fff" height="42.42px" width="250px" xmlns="http://www.w3.org/2000/svg" viewBox="0 291.4 1280 217.2">
-						<path d="M0 292.1v58.1h39.7v153.2h67.1V292.1M220.1 372.4h-31.4v-22.3h15.8v-58h-82.8v211.3h67v-79.9h31.4v79.9h67.2V292.1h-67.2M302 503.4h124.3v-58.2h-60.2v-24.6h38.3v-48.2h-38.3v-22.2h60.2v-58.1H302M954.8 363.6c0-45.6-33.7-71.5-81.5-71.5h-74.7v211.2h67.1v-54.1l38.4 54.1h75.7l-54.4-81c19.6-10.7 29.4-30.2 29.4-58.7M865.5 387v-39.3c9.3 0 20.7 2.8 24.1 13 .3.9.5 1.9.8 2.9 0 .1 0 .3.1.4.1 1 .3 2.2.3 3.4 0 15.7-14.3 19.6-25.3 19.6M559.2 420.8h-.6l-4.8-17.4-15-53.1h26.4l17.4-58.2h-134l76.8 211.2h68.8l8.3-22.6s36.8-99.8 56.9-154.2v176.8h124.3v-58.2h-60.2v-24.6h38.2v-48.1h-38.2v-22.2h60.2V292H598l-38.8 128.8zM1280 350.3v-58.1h-124.3v211.2H1280v-58.2h-60.3v-24.6h38.3v-48h-38.3v-22.3"></path>
-						<path d="M1142.8 459.1V373H1048v48h35.3v17.1c-2.7 2.4-8.5 3.7-14.5 3.7-24.6 0-42.8-19.4-42.8-43.1s17.7-44.7 42.3-44.7c14.9 0 50.2.1 50.2.1v-62.6h-16.1c-30 0-59.9-2.4-87.4 11.8-21.7 11.2-38.9 30.2-48 52.8-5.3 13.3-8 27.7-8 42 0 59.9 47 110.4 107.9 110.4 30.2 0 59.7-11.3 75.8-25.4.1-14.6.1-16.8.1-24"></path>
-					</svg>
-
-				</div>
-				<div class="footer-wrapper__items">
-					<ul class="footer-wrapper__items_list1">
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Terms of Use</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">privacy policy</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Communication preferences</a></li>
-					</ul>
-					<ul class="footer-wrapper__items_list1">
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Contacts</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">	ip us</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Community guildlines</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">About</a></li>
-						<li class="footer-wrapper__items_list"><a rel="nofollow" href="https://www.voxmedia.com/terms-of-use">Ethics</a></li>
-					</ul>
-					<div class="footer-wrapper__items__content3">
-						All Sysytems OPerational
-						<div class="footer-wrapper__items__content3_1">
-
-							check our status page for more details
-						</div>
-					</div>
-				</div>
-
-				<div class="footer-wrapper__last-content">
-
-					<svg id="Layer_1" fill="#fff" width="150px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="-147 464.2 484 79.5"
-					 class="c-footer__vox-logo">
-						<g>
-							<path fill="#fff" class="vox-media-logo-text" d="M-133.2 498l9.9 29 6.4-19.2c1.1-3.3 2.1-6.6 3-9.4h13.3l-13.2 32.4c-2.1 5.3-3.4 8.4-4.6 12l-10 .6-13.2-32c-1.6-4-3.6-9-5.4-12.9l13.8-.5zm38.8 23.6c0-14 9.3-24.4 23.2-24.4 13.3 0 22.1 9.8 22.1 22.1 0 14-9.4 24.4-23.2 24.4-13.4.1-22.1-9.8-22.1-22.1zm33-.9c0-8.4-4.3-13.6-10.3-13.6-6.4 0-10.5 6-10.5 13.2 0 8.4 4.3 13.6 10.3 13.6 6.4 0 10.5-6 10.5-13.2zm19.2 21.9l15.3-22.7-6-8.8-8.6-12.7 13.9-.5 9.1 14.2 3.1-5.3c1.6-2.6 3.8-6.1 5.4-8.6H3.7l-14.6 21.9 5.4 7.9c2.5 3.8 6.8 10.3 9.6 14.4l-14 .5-9.3-15.1-2.9 4.7c-1.4 2.3-4.4 7.2-6.1 9.8h-14v.3zm79.4-15.2l1.9-13.9c.6-4 1.6-12 1.8-15.3l9.6-.4c1.1 2.5 2.7 6.1 4 8.9l8.2 18.2 8-18.5c1.2-2.7 2.6-6 3.7-8.5h9.3c.4 3.7 1.4 11.5 2 15.6l2 13.9c.6 4.1 1.8 11.9 2.5 15.2l-12.4.5c-.1-1.8-.7-7.1-1.1-9.6l-1.8-14c-3.1 7.7-8.6 21.4-9.4 23.6l-6.6.3-9.5-23.3-1.5 13.5c-.3 2.5-.8 7.3-.8 9.1H34.7c.7-3.3 1.9-11.2 2.5-15.3zm96.1 15.5c-4.2-.3-9.3-.3-14.2-.3-5.5 0-11.5.1-16.2.3.3-3 .4-11.3.4-15.4v-14c0-4-.1-12.5-.4-15.6 4.6.2 9.6.3 15.3.3 5.2 0 10-.1 14.3-.3-.3 3.1-.5 6.2-.5 10-3.2-.1-6.4-.1-10.3-.1-1.9 0-4 0-5.8.1-.1.9-.1 2.2-.1 2.8v4.9l13.7-.1c-.1 2.6-.2 5.5-.2 8.8h-13.5v5.7c0 .7 0 2 .1 2.9 1.8 0 3.9.1 5.8.1 4.5 0 8.3-.1 12-.2-.2 3.2-.4 6.2-.4 10.1zm30-.3h-16.6c.3-3 .4-11.1.4-15.2v-13.9c0-4-.1-12-.4-15.1 2.3 0 7.9-.4 14.9-.4 16.7 0 26 8 26 21.5 0 14.2-9.5 23.1-24.3 23.1zm-.2-35c-1.3 0-2.1.1-3.1.2-.1.8-.1 2.1-.1 2.8v19.6c0 .8 0 1.7.1 2.6 1 .1 1.8.2 3.3.2 8.4 0 12-5.5 12-13-.1-7.9-4.7-12.4-12.2-12.4zm37.2 35c.3-3 .4-11.1.4-15.2v-13.9c0-4-.1-12.2-.4-15.2 2.5 0 11.3-.1 13.4-.3-.2 1.8-.3 6.9-.3 9.3v26.2c0 2.4.1 7.3.3 9.1h-13.4zm38.1-32.2c2.2-5.2 3.7-8.5 4.9-12l10.1-.6 13.8 32c1.6 3.9 4 9 5.8 12.9l-13.4.5-3.4-8.4h-15.4c-.8 2.1-2.6 7.1-3 7.9h-13.1l13.7-32.3zm4.9 16.5h10.1l-5.1-13.7-5 13.7z"></path>
-							<path fill="#F6A01A" d="M337 464.2V498l-30-16.9 30-16.9z"></path>
-							<path fill="#FBE346" d="M276.9 464.2V498l30.1-16.9-30.1-16.9z"></path>
-							<path fill="#F47B20" d="M307 481.1V515l30-17-30-16.9z"></path>
-							<path fill="#F8CC15" d="M307 481.1V515l-30.1-17 30.1-16.9z"></path>
-						</g>
-					</svg>
-					<div style="color:#e5127d">Advertise with us</div>
-					<div style="color:#e5127d">jobs @ volks media</div>
-					© 2017
-					<a rel="nofollow" href="http://www.voxmedia.com" style="color:#e5127d; text-decoration:none">Vox Media </a>, Inc. All
-					Rights Reserved
-				</div>
-			</div>
-		</footer>
-	</div>
+          <svg id="Layer_1" fill="#fff" width="150px" height="24px" xmlns="http://www.w3.org/2000/svg" viewBox="-147 464.2 484 79.5"
+            class="c-footer__vox-logo">
+            <g>
+              <path fill="#fff" class="vox-media-logo-text" d="M-133.2 498l9.9 29 6.4-19.2c1.1-3.3 2.1-6.6 3-9.4h13.3l-13.2 32.4c-2.1 5.3-3.4 8.4-4.6 12l-10 .6-13.2-32c-1.6-4-3.6-9-5.4-12.9l13.8-.5zm38.8 23.6c0-14 9.3-24.4 23.2-24.4 13.3 0 22.1 9.8 22.1 22.1 0 14-9.4 24.4-23.2 24.4-13.4.1-22.1-9.8-22.1-22.1zm33-.9c0-8.4-4.3-13.6-10.3-13.6-6.4 0-10.5 6-10.5 13.2 0 8.4 4.3 13.6 10.3 13.6 6.4 0 10.5-6 10.5-13.2zm19.2 21.9l15.3-22.7-6-8.8-8.6-12.7 13.9-.5 9.1 14.2 3.1-5.3c1.6-2.6 3.8-6.1 5.4-8.6H3.7l-14.6 21.9 5.4 7.9c2.5 3.8 6.8 10.3 9.6 14.4l-14 .5-9.3-15.1-2.9 4.7c-1.4 2.3-4.4 7.2-6.1 9.8h-14v.3zm79.4-15.2l1.9-13.9c.6-4 1.6-12 1.8-15.3l9.6-.4c1.1 2.5 2.7 6.1 4 8.9l8.2 18.2 8-18.5c1.2-2.7 2.6-6 3.7-8.5h9.3c.4 3.7 1.4 11.5 2 15.6l2 13.9c.6 4.1 1.8 11.9 2.5 15.2l-12.4.5c-.1-1.8-.7-7.1-1.1-9.6l-1.8-14c-3.1 7.7-8.6 21.4-9.4 23.6l-6.6.3-9.5-23.3-1.5 13.5c-.3 2.5-.8 7.3-.8 9.1H34.7c.7-3.3 1.9-11.2 2.5-15.3zm96.1 15.5c-4.2-.3-9.3-.3-14.2-.3-5.5 0-11.5.1-16.2.3.3-3 .4-11.3.4-15.4v-14c0-4-.1-12.5-.4-15.6 4.6.2 9.6.3 15.3.3 5.2 0 10-.1 14.3-.3-.3 3.1-.5 6.2-.5 10-3.2-.1-6.4-.1-10.3-.1-1.9 0-4 0-5.8.1-.1.9-.1 2.2-.1 2.8v4.9l13.7-.1c-.1 2.6-.2 5.5-.2 8.8h-13.5v5.7c0 .7 0 2 .1 2.9 1.8 0 3.9.1 5.8.1 4.5 0 8.3-.1 12-.2-.2 3.2-.4 6.2-.4 10.1zm30-.3h-16.6c.3-3 .4-11.1.4-15.2v-13.9c0-4-.1-12-.4-15.1 2.3 0 7.9-.4 14.9-.4 16.7 0 26 8 26 21.5 0 14.2-9.5 23.1-24.3 23.1zm-.2-35c-1.3 0-2.1.1-3.1.2-.1.8-.1 2.1-.1 2.8v19.6c0 .8 0 1.7.1 2.6 1 .1 1.8.2 3.3.2 8.4 0 12-5.5 12-13-.1-7.9-4.7-12.4-12.2-12.4zm37.2 35c.3-3 .4-11.1.4-15.2v-13.9c0-4-.1-12.2-.4-15.2 2.5 0 11.3-.1 13.4-.3-.2 1.8-.3 6.9-.3 9.3v26.2c0 2.4.1 7.3.3 9.1h-13.4zm38.1-32.2c2.2-5.2 3.7-8.5 4.9-12l10.1-.6 13.8 32c1.6 3.9 4 9 5.8 12.9l-13.4.5-3.4-8.4h-15.4c-.8 2.1-2.6 7.1-3 7.9h-13.1l13.7-32.3zm4.9 16.5h10.1l-5.1-13.7-5 13.7z"></path>
+              <path fill="#F6A01A" d="M337 464.2V498l-30-16.9 30-16.9z"></path>
+              <path fill="#FBE346" d="M276.9 464.2V498l30.1-16.9-30.1-16.9z"></path>
+              <path fill="#F47B20" d="M307 481.1V515l30-17-30-16.9z"></path>
+              <path fill="#F8CC15" d="M307 481.1V515l-30.1-17 30.1-16.9z"></path>
+            </g>
+          </svg>
+          <div style="color:#e5127d">Advertise with us</div>
+          <div style="color:#e5127d">jobs @ volks media</div>
+          © 2017
+          <a rel="nofollow" href="http://www.voxmedia.com" style="color:#e5127d; text-decoration:none">Vox Media </a>, Inc.
+          All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
